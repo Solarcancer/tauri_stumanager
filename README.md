@@ -27,15 +27,15 @@
 ### 2. 获取项目代码（Https or SSH）
 
 ```bash
-git clone https://github.com/jsxiaosi/tauri-xs-admin.git
+git clone https://github.com/zhengjie74/tauri_stumanager.git
 
-git clone git@github.com:jsxiaosi/tauri-xs-admin.git
+git clone git@github.com:zhengjie74/tauri_stumanager.git
 ```
 
 ### 3. 安装依赖
 
 ```bash
-cd vite-vue3-Template
+cd stu-manager
 ```
 
 推荐使用`pnpm`
