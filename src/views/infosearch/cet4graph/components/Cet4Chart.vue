@@ -13,7 +13,7 @@
 
   const fetchCet4Scores = async () => {
     try {
-      const db = await Database.load('mysql://root:swjtu2048@47.113.231.58:56888/DBCOURSE');
+      const db = await Database.load('yourSql@password');
       const result = await db.select('SELECT Ssc FROM Stu');
       const scores = result.map((item: any) => item.Ssc);
       const scoreDistribution = Array(4).fill(0); // 分成4个区间
