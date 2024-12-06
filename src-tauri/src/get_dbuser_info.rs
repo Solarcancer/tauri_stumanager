@@ -21,7 +21,7 @@ pub struct UserLoginInfo {
 }
 
 pub async fn get_user_info(username: &str) -> Result<Option<(UserLoginInfo, UseInfoType)>, mysql_async::Error> {
-    let database_url = "mysql://root:swjtu2048@47.113.231.58:56888/DBCOURSE";
+    let database_url = "yourSql&Password";
     let pool = Pool::new(database_url);
     let mut conn = pool.get_conn().await?;
 
