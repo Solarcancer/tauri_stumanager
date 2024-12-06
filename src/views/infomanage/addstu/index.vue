@@ -151,7 +151,7 @@
     //console.log(form.value);
 
     try {
-      const db = await Database.load('mysql://root:swjtu2048@47.113.231.58:56888/DBCOURSE');
+      const db = await Database.load('yourSql&Password');
       await db.execute('INSERT INTO Stu Values(?,?,?,?,?,?,?,?,?)', [
         form.value.studentId,
         form.value.name,
@@ -168,31 +168,6 @@
       createErrorMsg(error as string);
     }
   };
-  /* const submitForm = async (value: object) => {
-    form.value = { ...value, ...form.value };
-    console.log(form.value);
-    try {
-      await invoke('plugin:sql|execute', {
-        db: 'mysql://root:swjtu2048@47.113.231.58:56888/DBCOURSE',
-        query:
-          'INSERT INTO Stu VALUES(name, student_id, gender, birth_date, class, qq, position, cet4_score, residence) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
-        values: [
-          form.value.name,
-          form.value.studentId,
-          form.value.gender,
-          form.value.birthDate,
-          form.value.class,
-          form.value.qq,
-          form.value.position,
-          parseInt(form.value.cet4Score),
-          form.value.residence,
-        ],
-      });
-      createErrorModal('添加学生信息成功');
-    } catch (error) {
-      createErrorMsg(error as string);
-    }
-  }; */
 </script>
 
 <template>
