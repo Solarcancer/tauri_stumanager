@@ -20,7 +20,7 @@
 
   const fetchProvinceData = async () => {
     try {
-      const db = await Database.load('mysql://root:swjtu2048@47.113.231.58:56888/DBCOURSE');
+      const db = await Database.load('yourSql&Passowrd');
       const result = await db.select('SELECT Sjg FROM Stu');
       console.log('Fetched data:', result); // 添加日志
 
