@@ -114,7 +114,7 @@
     query: Partial<Student> & { cet4ScoreMin?: string; cet4ScoreMax?: string; birthDateRange?: [string, string] },
   ): Promise<Student[]> => {
     try {
-      const db = await Database.load('mysql://root:swjtu2048@47.113.231.58:56888/DBCOURSE');
+      const db = await Database.load('yourSql@Password');
       const conditions = [];
       const values = [];
 
